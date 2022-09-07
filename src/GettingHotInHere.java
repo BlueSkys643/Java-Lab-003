@@ -12,8 +12,9 @@ public class GettingHotInHere {
         double number = scanner.nextDouble();
 
         double conv = (number - 32) * (5.0/9.0);
-        System.out.printf("%.1f degrees Fahrenheit%n", number);
-        System.out.printf("%.1f degrees Celcius", conv);
-
+        System.out.printf("%.0f degrees Fahrenheit%n", number);
+        System.out.printf("%.6f degrees Celsius\n", conv);
+        System.out.printf("%.0f degrees Celsius\n", conv);
+        System.out.printf("If it were 2 degrees Celsius warmer it would be %.6f degrees Celsius", (conv + 2));
     }
 }
